@@ -2,7 +2,8 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
-    版本号为：{{vuex_version}}
+    版本号为：{{vuex_version}}----
+    人名{{vuex_user.name}}
     <div @click="modifyVuex">点击改变版本号</div>
   </div>
 </template>

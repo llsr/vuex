@@ -4,6 +4,8 @@ import router from './router';
 import store from './store';
 
 // let vuexStore = require('@/store/$u.mixin.js');
+const $u = {};
+Vue.prototype.$u = $u;
 import vuexStore from './store/$u.mixin';
 Vue.mixin(vuexStore);
 

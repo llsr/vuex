@@ -12,14 +12,13 @@ let vuexStore = {
         // 将vuex方法挂在到$u中
         // 使用方法为：如果要修改vuex的state中的user.name变量为"史诗" => this.$u.vuex('user.name', '史诗')
         // 如果要修改vuex的state的version变量为1.0.1 => this.$u.vuex('version', '1.0.1')
-        console.log('666' + this.store);
-        // this.$u.vuex = (name, value) => {
-        //     debugger;
-        //     this.$store.commit('$uStore', {
-        //         name,
-        //         value
-        //     });
-        // };
+        // console.log('666' + JSON.stringify(this.$u));
+        this.$u.vuex = (name, value) => {
+            this.$store.commit('$uStore', {
+                name,
+                value
+            });
+        };
     },
     computed: {
         // 将vuex的state中的所有变量，解构到全局混入的mixin中
