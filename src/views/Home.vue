@@ -17,9 +17,12 @@ export default {
   components: {
     HelloWorld
   },
+  created(){
+    //   console.log(this.$getTime)
+  },
   methods:{
     modifyVuex() {
-        this.$u.vuex('vuex_version', '1.0.6');
+        this.$u.vuex('vuex_version', '1.0.8');
     }
   }
 }

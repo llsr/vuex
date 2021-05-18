@@ -43,13 +43,10 @@ import {
 //	uploading,
 //	hideuploading
 //} from '../../components/index.js'
-const $u = {
-    vuex: {}
-};
+
 export default {
     version: '0.0.1',
     install: function(Vue) {
-        Vue.prototype.$u = $u;
         Vue.prototype.$getTime = getTime;
         Vue.prototype.$isClick = isClick;
         Vue.prototype.$setsessionStorage = setsessionStorage;

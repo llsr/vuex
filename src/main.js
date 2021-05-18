@@ -3,7 +3,9 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 
-// let vuexStore = require('@/store/$u.mixin.js');
+// 自定义全局方法库
+import PublicFun from './assets/js/exit_fun.js';
+Vue.use(PublicFun);
 const $u = {};
 Vue.prototype.$u = $u;
 import vuexStore from './store/$u.mixin';
